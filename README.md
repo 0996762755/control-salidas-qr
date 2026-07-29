@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -29,13 +28,9 @@ body{
 
 }
 
-
-
 /* =====================
    ENCABEZADO
 ===================== */
-
-
 .header{
 
     position:fixed;
