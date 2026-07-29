@@ -8,10 +8,7 @@
 
 <title>Sistema Control de Salidas QR</title>
 
-
 <style>
-
-/* ===================== GENERAL ===================== */
 
 *{
     box-sizing:border-box;
@@ -29,8 +26,9 @@ body{
 }
 
 
-
-/* ===================== ENCABEZADO ===================== */
+/* =====================
+   ENCABEZADO
+===================== */
 
 
 .header{
@@ -38,6 +36,7 @@ body{
     position:fixed;
     top:0;
     left:0;
+
     width:100%;
     height:95px;
 
@@ -50,13 +49,11 @@ body{
 
     padding:10px 35px;
 
-    box-shadow:
-    0 4px 12px rgba(0,0,0,.3);
+    box-shadow:0 4px 12px rgba(0,0,0,.3);
 
     z-index:1000;
 
 }
-
 
 
 .logo img{
@@ -71,14 +68,12 @@ body{
 }
 
 
-
 .titulo{
 
     text-align:center;
     flex:1;
 
 }
-
 
 
 .titulo h2{
@@ -89,14 +84,12 @@ body{
 }
 
 
-
 .titulo p{
 
     margin:5px;
     font-size:15px;
 
 }
-
 
 
 .usuario{
@@ -108,13 +101,17 @@ body{
 
 
 
-/* ===================== CONTENEDOR ===================== */
+/* =====================
+   CONTENEDOR
+===================== */
 
 
 .contenedor{
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     padding:30px;
@@ -123,7 +120,9 @@ body{
 
 
 
-/* ===================== TARJETA ===================== */
+/* =====================
+   TARJETA
+===================== */
 
 
 .card{
@@ -134,8 +133,7 @@ body{
 
     border-radius:20px;
 
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.35);
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
 
     overflow:hidden;
 
@@ -156,7 +154,6 @@ body{
 }
 
 
-
 .card-header h3{
 
     margin:0;
@@ -173,7 +170,9 @@ body{
 
 
 
-/* ===================== ESTADO ===================== */
+/* =====================
+   INFORMACION
+===================== */
 
 
 .estado{
@@ -185,7 +184,6 @@ body{
     color:#08783f;
 
 }
-
 
 
 .mensaje{
@@ -202,9 +200,6 @@ body{
 
 
 
-/* ===================== DATOS ===================== */
-
-
 .dato{
 
     background:#f1f5f2;
@@ -219,7 +214,9 @@ body{
 
 
 
-/* ===================== OTP ===================== */
+/* =====================
+   OTP
+===================== */
 
 
 .otp{
@@ -230,8 +227,7 @@ body{
 
     background:#e8f5e9;
 
-    border-left:
-    5px solid #08783f;
+    border-left:5px solid #08783f;
 
     border-radius:10px;
 
@@ -245,7 +241,7 @@ input{
 
     padding:12px;
 
-    margin-top:10px;
+    margin-top:15px;
 
     border-radius:8px;
 
@@ -261,7 +257,9 @@ input{
 
 
 
-/* ===================== BOTONES ===================== */
+/* =====================
+   BOTONES
+===================== */
 
 
 button{
@@ -302,18 +300,18 @@ button:hover{
 
     color:#08783f;
 
-    border:
-    2px solid #08783f;
+    border:2px solid #08783f;
 
 }
 
 
 
-/* ===================== RESPONSIVE ===================== */
+/* =====================
+   RESPONSIVE
+===================== */
 
 
 @media(max-width:600px){
-
 
 .header{
 
@@ -346,7 +344,6 @@ body{
 
 }
 
-
 }
 
 
@@ -360,15 +357,13 @@ body{
 
 
 
-<!-- ===================== HEADER ===================== -->
-
-
 <header class="header">
 
 
 <div class="logo">
 
-<img src="logo.png" alt="Cooperativa Tulcán">
+<img src="https://i.ibb.co/ymbvfZSb/tulcan.jpg" 
+alt="Cooperativa Tulcán">
 
 </div>
 
@@ -380,11 +375,9 @@ body{
 COOPERATIVA TULCÁN
 </h2>
 
-
 <p>
 Sistema de Control de Salidas mediante Código QR
 </p>
-
 
 </div>
 
@@ -407,14 +400,10 @@ Funcionario Institucional
 </div>
 
 
-
 </header>
 
 
 
-
-
-<!-- ===================== CONTENIDO ===================== -->
 
 
 <div class="contenedor">
@@ -430,6 +419,7 @@ Validación de Salida QR
 </h3>
 
 </div>
+
 
 
 
@@ -504,40 +494,39 @@ Matriz Tulcán
 
 
 
-<!-- OTP -->
+<hr>
+
+
+<h3 style="text-align:center">
+
+🔐 Validación OTP
+
+</h3>
+
 
 
 <div class="otp">
 
-
-<h4>
-🔐 Validación OTP
-</h4>
-
-
-<p>
-
 Se envió un código de seguridad al celular registrado:
 
-</p>
-
-
-<p>
+<br><br>
 
 <b>
-Celular:
+Celular: 099*****25
 </b>
 
-099*****25
 
-</p>
+</div>
+
 
 
 
 <input 
 type="text"
 maxlength="6"
-placeholder="Ingrese código OTP">
+placeholder="000000">
+
+
 
 
 
@@ -546,6 +535,7 @@ placeholder="Ingrese código OTP">
 Validar Código OTP
 
 </button>
+
 
 
 
@@ -559,7 +549,8 @@ Reenviar OTP
 
 
 
-</div>
+
+<hr>
 
 
 
@@ -569,7 +560,6 @@ Reenviar OTP
 ✔ Confirmar Registro de Salida
 
 </button>
-
 
 
 
@@ -590,29 +580,37 @@ Reenviar OTP
 
 function validarOTP(){
 
-alert(
-"Código OTP validado correctamente"
-);
+let codigo = document.querySelector("input").value;
+
+
+if(codigo.length === 6){
+
+alert("Código OTP validado correctamente");
+
+}else{
+
+alert("Ingrese un código OTP válido de 6 dígitos");
 
 }
+
+}
+
 
 
 
 function reenviarOTP(){
 
-alert(
-"Nuevo código OTP enviado al celular registrado"
-);
+alert("Nuevo código OTP enviado al celular registrado");
 
 }
 
 
 
+
+
 function confirmarSalida(){
 
-alert(
-"Registro de salida confirmado correctamente"
-);
+alert("Registro de salida confirmado correctamente");
 
 }
 
